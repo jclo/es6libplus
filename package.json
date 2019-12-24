@@ -1,0 +1,78 @@
+{
+  "name": "@mobilabs/es6libplus",
+  "version": "0.0.0-alpha.0",
+  "description": "A template for writing pure ES6 Javascript libraries",
+  "main": "index.js",
+  "bin": {
+    "es6libplus": "./bin/es6libplus.js"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "makedist": "gulp makedist",
+    "makeprivate": "gulp makeprivate && sh tasks/compress.sh ${npm_package_name} ${npm_package_version} @mobilabs",
+    "makelib": "gulp build && gulp makedist && gulp makeprivate && sh tasks/compress.sh ${npm_package_name} ${npm_package_version}",
+    "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha ./test/main.js",
+    "display-coverage": "opener ./coverage/lcov-report/index.html",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls",
+    "report": "nyc report",
+    "doc": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jclo/es6libplus.git"
+  },
+  "keywords": [
+    "es6",
+    "umd",
+    "library",
+    "template",
+    "boilerplate",
+    "gulp",
+    "mocha",
+    "istanbul"
+  ],
+  "author": {
+    "name": "Mobilabs",
+    "email": "contact@mobilabs.fr",
+    "url": "http://www.mobilabs.fr/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jclo/es6libplus/issues"
+  },
+  "homepage": "https://github.com/jclo/es6libplus",
+  "dependencies": {
+    "nopt": "^4.0.1",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.9",
+    "cross-env": "^6.0.3",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.9",
+    "gulp-modulify": "0.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "husky": "^3.1.0",
+    "mocha": "^6.2.2",
+    "nyc": "^15.0.0",
+    "opener": "^1.5.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && npm run makedist && npm run test && npm run check-coverage && npm run report"
+    }
+  }
+}

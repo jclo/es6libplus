@@ -14,7 +14,7 @@ ES6libplus is a boilerplate for writing ES6 Javascript libraries that run on bot
 
 The build doesn't require a transpiler (like babel) or a builder (like browserify, webpack or rollup) to produce a module that runs in the browser from source files that use `import` and `export` statements. It is useful if you want to keep your source code quite pure.
 
-ES6libplus relies on `gulp-modulify` to drastically reduces the amount of extra code added to your library (go to [gulp-modulify](https://www.npmjs.com/package/gulp-modulify) for details).
+ES6libplus relies on `gulp-modulify` to drastically reduces the amount of extra code added to your library (go to `gulp-modulify` for details).
 
 ES6libplus relies on [Mocha](https://mochajs.org) and [Chai](http://chaijs.com) for unitary testing. It relies on [Istanbul](https://gotwarlost.github.io/istanbul/) for code coverage.
 
