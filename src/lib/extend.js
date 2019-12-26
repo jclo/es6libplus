@@ -1,4 +1,4 @@
-/* ***************************************************************************
+/** **************************************************************************
  *
  * Provides the function 'extend' that is used to fill the object tree with
  * the public static or object methods when the Javascript VM browses the

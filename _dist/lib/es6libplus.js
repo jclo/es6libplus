@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.0
+ * ES6libplus v0.0.1
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
@@ -51,7 +51,7 @@
   /* eslint-disable-next-line */
   $__TREE.extend=function(o,m){var k=Object.keys(m);for(var i=0;i<k.length;i++){o[k[i]]=m[k[i]]}};
 
-  /* ***************************************************************************
+  /** **************************************************************************
    *
    * Provides the function 'extend' that is used to fill the object tree with
    * the public static or object methods when the Javascript VM browses the
@@ -123,7 +123,7 @@
   }());
   /* - */
 
-  /* ***************************************************************************
+  /** **************************************************************************
    *
    * A ...
    *
@@ -232,7 +232,7 @@
   }());
   /* eslint-enable no-underscore-dangle */
 
-  /* ***************************************************************************
+  /** **************************************************************************
    *
    * A ...
    *
@@ -308,7 +308,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.0';
+    ES6libplus.VERSION = '0.0.1';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -317,8 +317,8 @@
      * Returns a reference to this ES6libplus object.
      *
      * Nota:
-     * Running ES6libplus in noConflict mode, returns the ES6libplus variable to its
-     * _ previous owner.
+     * Running ES6libplus in noConflic mode, returns the ES6libplus variable to
+     * its previous owner.
      *
      * @method ()
      * @public

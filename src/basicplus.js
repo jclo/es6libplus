@@ -1,4 +1,4 @@
-/* ***************************************************************************
+/** **************************************************************************
  *
  * A ...
  *
@@ -53,8 +53,8 @@ ES6libplus = {
    * Returns a reference to this ES6libplus object.
    *
    * Nota:
-   * Running ES6libplus in noConflict mode, returns the ES6libplus variable to its
-   * _ previous owner.
+   * Running ES6libplus in noConflic mode, returns the ES6libplus variable to
+   * its previous owner.
    *
    * @function ()
    * @public
