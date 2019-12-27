@@ -46,7 +46,7 @@ function clean(done) {
 // by and UMD module).
 function dolibnoparent() {
   return src(core)
-    .pipe(replace(/global[\w\s,]+/g, ''))
+    .pipe(replace(/\/\* global[\w\s,]+\*\//g, '/* - */'))
     .pipe(modulify(`${name}${noparent}.js`, {
       header: fs.readFileSync(header, 'utf8'),
       footer: fs.readFileSync(footer, 'utf8'),

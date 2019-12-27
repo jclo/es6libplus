@@ -261,7 +261,7 @@ function _customize(source, dest, app, owner) {
   pack.scripts = obj.scripts;
   pack.repository = obj.repository;
   pack.repository.url = `https://github.com/${owner.acronym}/${app.toLowerCase()}.git`;
-  pack.keywords = [];
+  pack.keywords = ['ES6'];
   pack.author = obj.author;
   pack.author.name = owner.name;
   pack.author.email = owner.email;

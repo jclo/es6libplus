@@ -1,5 +1,11 @@
 ### HEAD
 
+### 0.0.2 (December 27, 2019)
+
+  * Updated the dependencies and fixed an issue on the Gulp task makejs.js,
+  * ...,
+
+
 ### 0.0.1 (December 26, 2019)
 
   * Fixed a few typos,
