@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.1
+ * ES6libplus v0.0.2
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
@@ -47,7 +47,7 @@
    *
    * ************************************************************************ */
   /* eslint-disable-next-line */
-  const $__TREE = {"src":{"lib":{"extend":{}},"util":{"util":{}},"functionalshared":{}}};
+  let $__TREE = {"src":{"lib":{"extend":{}},"util":{"util":{}},"functionalshared":{}}};
   /* eslint-disable-next-line */
   $__TREE.extend=function(o,m){var k=Object.keys(m);for(var i=0;i<k.length;i++){o[k[i]]=m[k[i]]}};
 
@@ -76,7 +76,7 @@
    * @since        0.0.0
    * @version      -
    * ************************************************************************ */
-  /* */
+  /* - */
   /* - */
 
   (function() {
@@ -148,7 +148,7 @@
    * @since        0.0.0
    * @version      -
    * ************************************************************************ */
-  /* */
+  /* - */
   /* eslint-disable no-underscore-dangle */
 
   (function() {
@@ -265,7 +265,7 @@
    * @since        0.0.0
    * @version      -
    * ************************************************************************ */
-  /* */
+  /* - */
   /* eslint-disable one-var, semi-style */
 
   (function() {
@@ -308,7 +308,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.1';
+    ES6libplus.VERSION = '0.0.2';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -367,7 +367,7 @@
 
 
     // -- Export
-    // none (ES6libplus is attached to the )
+    // none (ES6libplus is attached to the global window)
 
     // IIFE END
   }());
