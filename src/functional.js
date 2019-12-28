@@ -60,8 +60,8 @@ const previousES6libplus = root.ES6libplus
  *
  * @constructor (arg1)
  * @public
- * @param {String}        the argument to be saved as an object variable,
- * @returns {Object}      returns the ES6libplus object,
+ * @param {String}          the argument to be saved as an object variable,
+ * @returns {Object}        returns the ES6libplus object,
  * @since 0.0.0
  */
 ES6libplus = function(name) {
@@ -84,8 +84,8 @@ ES6libplus.VERSION = '{{lib:version}}';
  *
  * @method ()
  * @public
- * @param {}              -,
- * @returns {String}      returns the ES6libplus object,
+ * @param {}                -,
+ * @returns {String}        returns the ES6libplus object,
  * @since 0.0.0
  */
 /* istanbul ignore next */
@@ -103,8 +103,8 @@ ES6libplus.noConflict = function() {
  *
  * @method ()
  * @public
- * @param {}              -,
- * @returns {String}      returns a string,
+ * @param {}                -,
+ * @returns {String}        returns a string,
  * @since 0.0.0
  */
 obj.getString = function() {
@@ -116,8 +116,8 @@ obj.getString = function() {
  *
  * @method ()
  * @public
- * @param {}              -,
- * @returns {Array}       returns an array,
+ * @param {}                -,
+ * @returns {Array}         returns an array,
  * @since 0.0.0
  */
 obj.getArray = function() {

@@ -16,7 +16,7 @@
  *
  *
  *
- * @namespace    Tree.Util.Public
+ * @namespace    ES6libplus.src.util.util
  * @dependencies none
  * @exports      -
  * @author       -
@@ -45,8 +45,8 @@
  *
  * @function ()
  * @private
- * @param {}              -,
- * @returns {String}      returns a string,
+ * @param {}                -,
+ * @returns {String}        returns a string,
  * @since 0.0.0
  */
 function _getString() {
@@ -58,8 +58,8 @@ function _getString() {
  *
  * @function ()
  * @private
- * @param {}              -,
- * @returns {Array}       returns an array,
+ * @param {}                -,
+ * @returns {Array}         returns an array,
  * @since 0.0.0
  */
 function _getArray() {
@@ -76,8 +76,8 @@ const Util = {
    *
    * @method ()
    * @public
-   * @param {}            -,
-   * @returns {String}    returns a string,
+   * @param {}              -,
+   * @returns {String}      returns a string,
    * @since 0.0.0
    */
   getString() {
@@ -89,8 +89,8 @@ const Util = {
    *
    * @method ()
    * @public
-   * @param {}            -,
-   * @returns {Array}     returns an array,
+   * @param {}              -,
+   * @returns {Array}       returns an array,
    * @since 0.0.0
    */
   getArray() {

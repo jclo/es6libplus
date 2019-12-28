@@ -1,5 +1,12 @@
 ### HEAD
 
+### 0.0.3 (December 27, 2019)
+
+  * Made some cosmetic changes,
+  * Updated gulp-modulify,
+  * ...,
+
+
 ### 0.0.2 (December 27, 2019)
 
   * Updated the dependencies and fixed an issue on the Gulp task makejs.js,

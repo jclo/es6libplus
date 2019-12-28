@@ -16,7 +16,7 @@
  *
  *
  *
- * @namespace    -
+ * @namespace    ES6libplus.src.lib.extend
  * @dependencies none
  * @exports      -
  * @author       -
@@ -47,9 +47,9 @@
  *
  * @function (arg1, arg2)
  * @private
- * @param {Object}        the object to extend,
- * @param {Object}        an object containing a set of methods,
- * @returns {}            -,
+ * @param {Object}          the object to extend,
+ * @param {Object}          an object containing a set of methods,
+ * @returns {}              -,
  * @since 0.0.0
  */
 extend = function(object, methods) {

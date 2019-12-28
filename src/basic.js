@@ -55,8 +55,8 @@ ES6libplus = {
    *
    * @method ()
    * @public
-   * @param {}            -,
-   * @returns {String}    returns the ES6libplus object,
+   * @param {}              -,
+   * @returns {String}      returns the ES6libplus object,
    * @since 0.0.0
    */
   /* istanbul ignore next */
@@ -71,8 +71,8 @@ ES6libplus = {
    *
    * @method ()
    * @public
-   * @param {}            -,
-   * @returns {String}    returns a string,
+   * @param {}              -,
+   * @returns {String}      returns a string,
    * @since 0.0.0
    */
   getString() {
@@ -84,8 +84,8 @@ ES6libplus = {
    *
    * @method ()
    * @public
-   * @param {}            -,
-   * @returns {Array}     returns an array,
+   * @param {}              -,
+   * @returns {Array}       returns an array,
    * @since 0.0.0
    */
   getArray() {

@@ -61,8 +61,8 @@ let methods
  *
  * @constructor (arg1)
  * @public
- * @param {String}        the argument to be saved as an object variable,
- * @returns {Object}      returns the ES6libplus object,
+ * @param {String}          the argument to be saved as an object variable,
+ * @returns {Object}        returns the ES6libplus object,
  * @since 0.0.0
  */
 ES6libplus = function(name) {
@@ -86,8 +86,8 @@ ES6libplus.VERSION = '{{lib:version}}';
  *
  * @method ()
  * @public
- * @param {}              -,
- * @returns {String}      returns the ES6libplus object,
+ * @param {}                -,
+ * @returns {String}        returns the ES6libplus object,
  * @since 0.0.0
  */
 /* istanbul ignore next */
@@ -107,8 +107,8 @@ methods = {
    *
    * @method ()
    * @public
-   * @param {}            -,
-   * @returns {String}    returns a string,
+   * @param {}              -,
+   * @returns {String}      returns a string,
    * @since 0.0.0
    */
   getString() {
@@ -120,8 +120,8 @@ methods = {
    *
    * @method ()
    * @public
-   * @param {}            -,
-   * @returns {Array}     returns an array,
+   * @param {}              -,
+   * @returns {Array}       returns an array,
    * @since 0.0.0
    */
   getArray() {
