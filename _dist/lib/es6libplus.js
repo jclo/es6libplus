@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.2
+ * ES6libplus v0.0.3
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
@@ -69,7 +69,7 @@
    *
    *
    *
-   * @namespace    -
+   * @namespace    ES6libplus.src.lib.extend
    * @dependencies none
    * @exports      -
    * @author       -
@@ -101,9 +101,9 @@
      *
      * @function (arg1, arg2)
      * @private
-     * @param {Object}        the object to extend,
-     * @param {Object}        an object containing a set of methods,
-     * @returns {}            -,
+     * @param {Object}          the object to extend,
+     * @param {Object}          an object containing a set of methods,
+     * @returns {}              -,
      * @since 0.0.0
      */
     extend = function(object, methods) {
@@ -141,7 +141,7 @@
    *
    *
    *
-   * @namespace    Tree.Util.Public
+   * @namespace    ES6libplus.src.util.util
    * @dependencies none
    * @exports      -
    * @author       -
@@ -171,8 +171,8 @@
      *
      * @function ()
      * @private
-     * @param {}              -,
-     * @returns {String}      returns a string,
+     * @param {}                -,
+     * @returns {String}        returns a string,
      * @since 0.0.0
      */
     function _getString() {
@@ -184,8 +184,8 @@
      *
      * @function ()
      * @private
-     * @param {}              -,
-     * @returns {Array}       returns an array,
+     * @param {}                -,
+     * @returns {Array}         returns an array,
      * @since 0.0.0
      */
     function _getArray() {
@@ -202,8 +202,8 @@
        *
        * @method ()
        * @public
-       * @param {}            -,
-       * @returns {String}    returns a string,
+       * @param {}              -,
+       * @returns {String}      returns a string,
        * @since 0.0.0
        */
       getString() {
@@ -215,8 +215,8 @@
        *
        * @method ()
        * @public
-       * @param {}            -,
-       * @returns {Array}     returns an array,
+       * @param {}              -,
+       * @returns {Array}       returns an array,
        * @since 0.0.0
        */
       getArray() {
@@ -296,8 +296,8 @@
      *
      * @constructor (arg1)
      * @public
-     * @param {String}        the argument to be saved as an object variable,
-     * @returns {Object}      returns the ES6libplus object,
+     * @param {String}          the argument to be saved as an object variable,
+     * @returns {Object}        returns the ES6libplus object,
      * @since 0.0.0
      */
     ES6libplus = function(name) {
@@ -308,7 +308,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.2';
+    ES6libplus.VERSION = '0.0.3';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -322,8 +322,8 @@
      *
      * @method ()
      * @public
-     * @param {}              -,
-     * @returns {String}      returns the ES6libplus object,
+     * @param {}                -,
+     * @returns {String}        returns the ES6libplus object,
      * @since 0.0.0
      */
     /* istanbul ignore next */
@@ -343,8 +343,8 @@
        *
        * @method ()
        * @public
-       * @param {}            -,
-       * @returns {String}    returns a string,
+       * @param {}              -,
+       * @returns {String}      returns a string,
        * @since 0.0.0
        */
       getString() {
@@ -356,8 +356,8 @@
        *
        * @method ()
        * @public
-       * @param {}            -,
-       * @returns {Array}     returns an array,
+       * @param {}              -,
+       * @returns {Array}       returns an array,
        * @since 0.0.0
        */
       getArray() {

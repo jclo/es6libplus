@@ -4,7 +4,7 @@
 
   * Made some cosmetic changes,
   * Updated gulp-modulify,
-  * ...,
+  * Release.
 
 
 ### 0.0.2 (December 27, 2019)
