@@ -3,7 +3,7 @@
 ### 0.0.4 (February 3, 2020)
 
   * Slightly improved the product,
-  * ...,
+  * Release.
 
 
 ### 0.0.3 (December 27, 2019)
