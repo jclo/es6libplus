@@ -1,6 +1,6 @@
 {
   "name": "@mobilabs/es6libplus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A template for writing pure ES6 Javascript libraries",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,9 @@
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch",
+    "dev": "gulp rundev",
     "makedist": "gulp makedist",
+    "app": "gulp runapp",
     "makeprivate": "gulp makeprivate && sh tasks/compress.sh ${npm_package_name} ${npm_package_version} @mobilabs",
     "makelib": "gulp build && gulp makedist && gulp makeprivate && sh tasks/compress.sh ${npm_package_name} ${npm_package_version}",
     "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha ./test/main.js",
@@ -50,20 +52,22 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.9",
-    "cross-env": "^6.0.3",
+    "cross-env": "^7.0.0",
     "del": "^5.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.19.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
     "gulp-header": "^2.0.9",
     "gulp-modulify": "0.0.3",
     "gulp-replace": "^1.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "husky": "^3.1.0",
-    "mocha": "^6.2.2",
+    "husky": "^4.2.1",
+    "mocha": "^7.0.1",
     "nyc": "^15.0.0",
+    "open": "^7.0.2",
     "opener": "^1.5.1"
   },
   "publishConfig": {

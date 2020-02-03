@@ -16,8 +16,9 @@ const config = require('./config')
 
 
 // -- Local constants
-const { dist } = config
-    , { index } = config
+const { dist }     = config
+    , { index }    = config
+    , { distlink } = config
     ;
 
 
@@ -30,6 +31,7 @@ function copypackagejson(done) {
   fs.readFile('./package.json', 'utf8', (error, data) => {
     if (error) { throw error; }
     const obj = JSON.parse(data);
+    obj.main = distlink;
     obj.bin = {};
     obj.scripts = {};
     obj.dependencies = {};

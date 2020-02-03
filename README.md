@@ -41,7 +41,7 @@ Now populate your empty folder and create your first UMD library:
 
 ```bash
 // populate
-es6lib populate -n myapp
+es6libplus populate -n myapp
 // Or, if you installed the package locally:
 ./node_modules/.bin/es6libplus populate -n myapp
 // Install Node.js packages

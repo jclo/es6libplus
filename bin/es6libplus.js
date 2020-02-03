@@ -4,7 +4,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2019 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr)
+ * Copyright (c) 2020 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -38,7 +38,7 @@ const fs    = require('fs')
 const boilerlib   = 'ES6libplus'
     /* eslint-disable-next-line object-curly-newline */
     , author = { name: 'John Doe', acronym: 'jdo', email: 'jdo@johndoe.com', url: 'http://www.johndoe.com' }
-    , copyright   = 'Copyright (c) 2019 {{author:name}} <{{author:email}}> ({{author:url}})'
+    , copyright   = 'Copyright (c) 2020 {{author:name}} <{{author:email}}> ({{author:url}})'
     , baseapp     = process.cwd()
     , baseboiler  = __dirname.replace('/bin', '')
     , { version } = require('../package.json')
@@ -117,6 +117,7 @@ const index = [
 
 const gitignore = '';
 const eslintignore = '';
+const npmignore = '';
 
 
 // -- Private functions --------------------------------------------------------
@@ -196,8 +197,11 @@ function _isFolderEmpty(folder) {
  */
 function _addSkeleton(base, app, owner, cright) {
   const newFiles = [
-    [readme, license, changelog, gitignore, eslintignore, index],
-    ['README.md', 'LICENSE.md', 'CHANGELOG.md', '.gitignore', '.eslintignore', 'index.js'],
+    [readme, license, changelog, gitignore, eslintignore, npmignore, index],
+    [
+      'README.md', 'LICENSE.md', 'CHANGELOG.md', '.gitignore', '.eslintignore',
+      '.npmignore', 'index.js',
+    ],
   ];
 
   let input;
@@ -256,7 +260,7 @@ function _customize(source, dest, app, owner) {
   pack.name = app.toLowerCase();
   pack.version = '0.0.0';
   pack.description = `${app} ...`;
-  pack.main = obj.main;
+  pack.main = `_dist/lib/${app.toLowerCase()}.js`;
   pack.bin = {};
   pack.scripts = obj.scripts;
   pack.repository = obj.repository;
@@ -313,8 +317,6 @@ function _addSrc(source, dest, folder, app) {
   for (let i = 0; i < f.length; i++) {
     shell.sed('-i', re, app, f[i]);
   }
-
-  shell.sed('-i', /{{template:version}}/, version, `${dest}/${folder}/_header`);
 }
 
 /**
@@ -329,7 +331,10 @@ function _addSrc(source, dest, folder, app) {
  * @returns {}              -,
  */
 function _addTasks(source, dest, folder, app) {
-  const exclude = [];
+  const exclude = []
+      , boiler  = '{{boiler:name}}'
+      , ver     = '{{es6libplus:version}}'
+      ;
 
   process.stdout.write(`  duplicated the contents of ${folder}\n`);
   shell.mkdir('-p', `${dest}/${folder}`);
@@ -339,8 +344,11 @@ function _addTasks(source, dest, folder, app) {
     shell.rm('-f', `${dest}/${folder}/${exclude[i]}`);
   }
 
-  // Replace 'boilerlib' by 'app' to config.js:
+  // Replace 'boilerlib' by 'app' to config.js and add the version
+  // of the boilerplate:
   shell.sed('-i', boilerlib, app, `${dest}/${folder}/config.js`);
+  shell.sed('-i', boiler, boilerlib, `${dest}/${folder}/config.js`);
+  shell.sed('-i', ver, version, `${dest}/${folder}/config.js`);
 }
 
 /**
@@ -389,7 +397,7 @@ function _populate(locopts) {
   const resp = _isFolderEmpty(baseapp);
   if (!resp) {
     process.stdout.write('This folder already contains files and/or folders. Clean it up first! Process aborted...\n');
-    // process.exit(1);
+    process.exit(1);
   }
 
   // Create README.md, LICENSE.md, CHANGELOG.md, etc.:
