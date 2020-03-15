@@ -1,12 +1,12 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.4
+ * ES6libplus v0.0.5
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
  * Copyright (c) 2020 Mobilabs <contact@mobilabs.fr> (http://www.mobilabs.fr/).
  * Released under the MIT license. You may obtain a copy of the License
  * at: http://www.opensource.org/licenses/mit-license.php).
- * Built from {{boiler:name}} v{{es6libplus:version}}.
+ * Built from {{boiler:name}} v{{boiler:name:version}}.
  * ************************************************************************** */
 // ESLint declarations
 /* global define */
@@ -308,7 +308,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.4';
+    ES6libplus.VERSION = '0.0.5';
 
 
     // -- Public Static Methods ------------------------------------------------

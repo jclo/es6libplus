@@ -10,6 +10,7 @@ const pack = require('../package.json');
 
 // -- Local constants
 const libname = 'ES6libplus'
+    , name    = libname.replace(/\s+/g, '').toLowerCase()
     ;
 
 
@@ -25,7 +26,7 @@ module.exports = {
   parent: 'this',
   noparent: '-noparent',
   index: './index.js',
-  distlink: `./lib/${libname}.js`,
+  distlink: `./_dist/lib/${name}.js`,
   // These are the Javascript files required to build the library. Choose one
   // pattern among these ones. The library can include only the header file,
   // a core file and the footer file. The files 'basic.js', 'functional.js',
@@ -64,7 +65,7 @@ module.exports = {
       ` * Copyright (c) ${(new Date()).getFullYear()} ${pack.author.name} <${pack.author.email}> (${pack.author.url}).`,
       ' * Released under the MIT license. You may obtain a copy of the License',
       ' * at: http://www.opensource.org/licenses/mit-license.php).',
-      ' * Built from {{boiler:name}} v{{es6libplus:version}}.',
+      ' * Built from {{boiler:name}} v{{boiler:name:version}}.',
       ' * ************************************************************************** */',
       ''].join('\n');
   },

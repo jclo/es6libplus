@@ -1,6 +1,6 @@
 {
   "name": "@mobilabs/es6libplus",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A template for writing pure ES6 Javascript libraries",
   "main": "index.js",
   "bin": {
@@ -46,28 +46,28 @@
   },
   "homepage": "https://github.com/jclo/es6libplus",
   "dependencies": {
-    "nopt": "^4.0.1",
+    "nopt": "^4.0.3",
     "shelljs": "^0.8.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.9",
-    "cross-env": "^7.0.0",
+    "cross-env": "^7.0.2",
     "del": "^5.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.19.1",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
     "gulp-header": "^2.0.9",
-    "gulp-modulify": "0.0.3",
+    "gulp-modulify": "0.0.4",
     "gulp-replace": "^1.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "husky": "^4.2.1",
-    "mocha": "^7.0.1",
+    "husky": "^4.2.3",
+    "mocha": "^7.1.0",
     "nyc": "^15.0.0",
-    "open": "^7.0.2",
+    "open": "^7.0.3",
     "opener": "^1.5.1"
   },
   "publishConfig": {

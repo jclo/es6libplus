@@ -1,5 +1,12 @@
 ### HEAD
 
+### 0.0.5 (March 15, 2020)
+
+  * Updated the dependencies,
+  * Slightly modified the Gulp task to build private packages, 
+  * ...,
+
+
 ### 0.0.4 (February 3, 2020)
 
   * Slightly improved the product,

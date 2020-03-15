@@ -24,7 +24,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  * ************************************************************************** */
-/* eslint one-var: 0,semi-style: 0 */
+/* eslint one-var: 0,semi-style: 0, no-underscore-dangle: 0 */
 
 
 // -- Node modules
@@ -50,14 +50,12 @@ const boilerlib   = 'ES6libplus'
     , opts = {
       help: [Boolean, false],
       version: [String, null],
-      collection: [Boolean, false],
       path,
       name: [String, null],
     }
     , shortOpts = {
       h: ['--help'],
       v: ['--version', version],
-      c: ['--collection'],
       p: ['--path'],
       n: ['--name'],
     }
@@ -120,8 +118,7 @@ const eslintignore = '';
 const npmignore = '';
 
 
-// -- Private functions --------------------------------------------------------
-/* eslint-disable no-underscore-dangle */
+// -- Private Functions --------------------------------------------------------
 
 /**
  * Displays help message.
@@ -258,7 +255,7 @@ function _customize(source, dest, app, owner) {
 
   const pack = {};
   pack.name = app.toLowerCase();
-  pack.version = '0.0.0';
+  pack.version = '0.0.0-alpha.0';
   pack.description = `${app} ...`;
   pack.main = `_dist/lib/${app.toLowerCase()}.js`;
   pack.bin = {};
@@ -333,7 +330,7 @@ function _addSrc(source, dest, folder, app) {
 function _addTasks(source, dest, folder, app) {
   const exclude = []
       , boiler  = '{{boiler:name}}'
-      , ver     = '{{es6libplus:version}}'
+      , ver     = '{{boiler:name:version}}'
       ;
 
   process.stdout.write(`  duplicated the contents of ${folder}\n`);
@@ -421,7 +418,6 @@ function _populate(locopts) {
 
   process.stdout.write('Done. Enjoy!\n');
 }
-/* eslint-disable no-underscore-dangle */
 
 
 // -- Main
