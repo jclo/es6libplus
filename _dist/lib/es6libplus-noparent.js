@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.5
+ * ES6libplus v0.0.6
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
@@ -20,6 +20,7 @@
     // Node. Does not work with strict CommonJS, but
     // only CommonJS-like environments that support module.exports,
     // like Node.
+    /* eslint-disable-next-line no-param-reassign */
     module.exports = factory(root);
   } else {
     // Browser globals.
@@ -304,7 +305,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.5';
+    ES6libplus.VERSION = '0.0.6';
 
 
     // -- Public Static Methods ------------------------------------------------

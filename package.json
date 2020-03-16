@@ -1,6 +1,6 @@
 {
   "name": "@mobilabs/es6libplus",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A template for writing pure ES6 Javascript libraries",
   "main": "index.js",
   "bin": {

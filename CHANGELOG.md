@@ -1,5 +1,10 @@
 ### HEAD
 
+### 0.0.6 (March 16, 2020)
+
+  * Fixed a minor typo and released a new version.
+
+
 ### 0.0.5 (March 15, 2020)
 
   * Updated the dependencies,
