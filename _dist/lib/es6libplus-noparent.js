@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.6
+ * ES6libplus v0.0.7-beta.1
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
@@ -80,13 +80,13 @@
     // IIFE START
 
 
-    // -- Local modules
+    // -- Local Modules
 
 
-    // -- Local constants
+    // -- Local Constants
 
 
-    // -- Local variables
+    // -- Local Variables
 
 
     // -- Public function ------------------------------------------------------
@@ -152,13 +152,13 @@
     // IIFE START
 
 
-    // -- Local modules
+    // -- Local Modules
 
 
-    // -- Local constants
+    // -- Local Constants
 
 
-    // -- Local variables
+    // -- Local Variables
 
 
     // -- Private Functions ----------------------------------------------------
@@ -269,18 +269,18 @@
     // IIFE START
 
 
-    // -- Local modules
+    // -- Local Modules
     const Util = $__TREE.src.util.util;
 
 
-    // -- Local constants
+    // -- Local Constants
     // Saves the previous value of the library variable, so that it can be
     // restored later on, if noConflict is used.
     const previousES6libplus = root.ES6libplus
         ;
 
 
-    // -- Local variables
+    // -- Local Variables
     let methods
       ;
 
@@ -305,7 +305,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.6';
+    ES6libplus.VERSION = '0.0.7-beta.1';
 
 
     // -- Public Static Methods ------------------------------------------------

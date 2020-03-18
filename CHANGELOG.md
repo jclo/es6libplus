@@ -1,5 +1,11 @@
 ### HEAD
 
+### 0.0.7 (March 18, 2020)
+
+  * Made some aesthetic changes,
+  * ...,
+
+
 ### 0.0.6 (March 16, 2020)
 
   * Fixed a minor typo and released a new version.

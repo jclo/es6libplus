@@ -1,20 +1,20 @@
 /* eslint one-var: 0, semi-style: 0 */
 
 
-// -- Vendor modules
+// -- Vendor Modules
 
 
-// -- Local modules
+// -- Local Modules
 const pack = require('../package.json');
 
 
-// -- Local constants
+// -- Local Constants
 const libname = 'ES6libplus'
     , name    = libname.replace(/\s+/g, '').toLowerCase()
     ;
 
 
-// -- Local variables
+// -- Local Variables
 
 
 // -- Main
@@ -27,6 +27,7 @@ module.exports = {
   noparent: '-noparent',
   index: './index.js',
   distlink: `./_dist/lib/${name}.js`,
+
   // These are the Javascript files required to build the library. Choose one
   // pattern among these ones. The library can include only the header file,
   // a core file and the footer file. The files 'basic.js', 'functional.js',
@@ -54,8 +55,8 @@ module.exports = {
     // This is the footer section of the UMD module:
     footer: './src/_footer',
   },
-
   /* eslint-enable no-multi-spaces */
+
   get license() {
     return ['/*! ****************************************************************************',
       ` * ${libname} v${pack.version}`,

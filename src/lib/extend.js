@@ -29,13 +29,13 @@
 // IIFE_START
 
 
-// -- Local modules
+// -- Local Modules
 
 
-// -- Local constants
+// -- Local Constants
 
 
-// -- Local variables
+// -- Local Variables
 
 
 // -- Public function ------------------------------------------------------
