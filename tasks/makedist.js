@@ -62,6 +62,7 @@ function makenoparentlib() {
 // Creates the minified version.
 function makeminified() {
   return src(`${libdir}/${name}.js`)
+    .pipe(replace('/*! ***', '/** ***'))
     .pipe(uglify())
     .pipe(header(license))
     .pipe(concat(`${name}.min.js`))

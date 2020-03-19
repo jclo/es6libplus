@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.7-beta.1
+ * ES6libplus v0.0.7
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
@@ -309,7 +309,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.7-beta.1';
+    ES6libplus.VERSION = '0.0.7';
 
 
     // -- Public Static Methods ------------------------------------------------
