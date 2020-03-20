@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.7
+ * ES6libplus v0.0.8
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
@@ -77,7 +77,7 @@
   /* - */
 
   (function() {
-    // IIFE START
+    // START OF IIFE
 
 
     // -- Local Modules
@@ -116,7 +116,7 @@
     // -- Export
     // none,
 
-    // IIFE END
+    // END OF IIFE
   }());
   /* - */
 
@@ -149,7 +149,7 @@
   /* eslint-disable no-underscore-dangle */
 
   (function() {
-    // IIFE START
+    // START OF IIFE
 
 
     // -- Local Modules
@@ -225,7 +225,7 @@
     // -- Export
     $__TREE.extend($__TREE.src.util.util, Util);
 
-    // IIFE END
+    // END OF IIFE
   }());
   /* eslint-enable no-underscore-dangle */
 
@@ -266,7 +266,7 @@
   /* eslint-disable one-var, semi-style */
 
   (function() {
-    // IIFE START
+    // START OF IIFE
 
 
     // -- Local Modules
@@ -305,7 +305,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.7';
+    ES6libplus.VERSION = '0.0.8';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -366,7 +366,7 @@
     // -- Export
     // none (ES6libplus is attached to the global window)
 
-    // IIFE END
+    // END OF IIFE
   }());
   /* eslint-enable one-var, semi-style */
 

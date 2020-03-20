@@ -1,6 +1,6 @@
 {
   "name": "@mobilabs/es6libplus",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A template for writing pure ES6 Javascript libraries",
   "main": "index.js",
   "bin": {
@@ -61,7 +61,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
     "gulp-header": "^2.0.9",
-    "gulp-modulify": "0.0.4",
+    "gulp-modulify": "0.0.5",
     "gulp-replace": "^1.0.0",
     "gulp-uglify-es": "^2.0.0",
     "husky": "^4.2.3",

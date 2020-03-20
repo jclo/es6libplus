@@ -1,5 +1,12 @@
 ### HEAD
 
+### 0.0.8 (March 20, 2020)
+
+  * Fixed a minor issue to the script es6libplus.js,
+  * Updated the dependencies,
+  * ...,
+
+
 ### 0.0.7 (March 19, 2020)
 
   * Made some aesthetic changes,
