@@ -4,7 +4,7 @@
 
   * Fixed a minor issue to the script es6libplus.js,
   * Updated the dependencies,
-  * ...,
+  * Release.
 
 
 ### 0.0.7 (March 19, 2020)
