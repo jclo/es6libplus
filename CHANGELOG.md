@@ -3,7 +3,7 @@
 ### 0.0.9 (March 28, 2020)
 
   * Fixed some typos,
-  * ...,
+  * Release.
 
 
 ### 0.0.8 (March 20, 2020)
