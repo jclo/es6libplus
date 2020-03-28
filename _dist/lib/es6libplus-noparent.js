@@ -1,5 +1,5 @@
 /*! ****************************************************************************
- * ES6libplus v0.0.8
+ * ES6libplus v0.0.9
  *
  * A template for writing pure ES6 Javascript libraries.
  * (you can download it from npm or github repositories)
@@ -305,7 +305,7 @@
     };
 
     // Attaches a constant to ES6libplus that provides the version of the lib.
-    ES6libplus.VERSION = '0.0.8';
+    ES6libplus.VERSION = '0.0.9';
 
 
     // -- Public Static Methods ------------------------------------------------
@@ -320,7 +320,7 @@
      * @method ()
      * @public
      * @param {}                -,
-     * @returns {String}        returns the ES6libplus object,
+     * @returns {Object}        returns the ES6libplus object,
      * @since 0.0.0
      */
     /* istanbul ignore next */

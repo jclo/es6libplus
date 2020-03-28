@@ -89,7 +89,7 @@ ES6libplus.VERSION = '{{lib:version}}';
  * @method ()
  * @public
  * @param {}                -,
- * @returns {String}        returns the ES6libplus object,
+ * @returns {Object}        returns the ES6libplus object,
  * @since 0.0.0
  */
 /* istanbul ignore next */

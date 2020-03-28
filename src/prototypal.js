@@ -65,7 +65,7 @@ let methods
  * @returns {Object}        returns the ES6libplus object,
  * @since 0.0.0
  */
-ES6libplus = function(name) {
+const ES6libplus = function(name) {
   const obj = Object.create(methods);
   obj.name = name;
   return obj;
@@ -87,7 +87,7 @@ ES6libplus.VERSION = '{{lib:version}}';
  * @method ()
  * @public
  * @param {}                -,
- * @returns {String}        returns the ES6libplus object,
+ * @returns {Object}        returns the ES6libplus object,
  * @since 0.0.0
  */
 /* istanbul ignore next */
@@ -131,7 +131,7 @@ methods = {
 
 
 // -- Export
-// none (ES6libplus is attached to the global window)
+export default ES6libplus;
 
 // IIFE_END
 /* eslint-enable one-var, semi-style */
