@@ -8,7 +8,8 @@
 [![License][license-image]](LICENSE.md)
 <!--- [![node version][node-image]][node-url] -->
 
-[![NPM install][npm-install-image]][npm-install-url]
+| `ES6libplus` has been deprecated. Please, use [ES6Kadoo](https://www.npmjs.com/package/@mobilabs/es6kadoo) with [kadoo](https://www.npmjs.com/package/kadoo) or [es6Pakket](https://www.npmjs.com/package/@mobilabs/es6pakket) with [pakket](https://www.npmjs.com/package/pakket) now. |
+| --- |
 
 ES6libplus is a boilerplate for writing ES6 Javascript libraries that run on both Node.js and ECMAScript 2015 (ES6) compliant browsers.
 

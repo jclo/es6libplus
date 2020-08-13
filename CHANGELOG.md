@@ -1,5 +1,10 @@
 ### HEAD
 
+### 0.0.10 (August 13, 2020)
+
+  * End Of Life!
+
+
 ### 0.0.9 (March 28, 2020)
 
   * Fixed some typos,
